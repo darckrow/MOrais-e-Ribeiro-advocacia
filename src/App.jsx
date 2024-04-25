@@ -1,14 +1,11 @@
 
-import './App.css'
-import Navbar from './routes/Home';
 
 function App() {
  
-
-  return (
-   <div>
-           <Navbar/>
-   </div>
+  return ( 
+       <div>     
+         <h1>teste</h1>
+      </div>
   )
 }
 
