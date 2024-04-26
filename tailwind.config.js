@@ -6,6 +6,7 @@ export default {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
+  
     extend: {},
   },
   plugins: [],
