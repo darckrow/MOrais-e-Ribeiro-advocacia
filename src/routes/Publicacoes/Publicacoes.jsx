@@ -1,5 +1,6 @@
 import Navigation from "../../Components/NavigationPubli";
 import Publicacao from "../../Components/Publicacao";
+import Footer from "../../Components/Footer";
 import nicoly from "../../assets/nicoly_public.svg";
 import imagem_exposicao from "../../assets/exposicao.svg";
 import pjxclt from "../../assets/pjxclt.svg";
@@ -103,6 +104,7 @@ const Publicacoes = () => {
                 nome_publicador='João Pedro'
                 sobre_publicador={`Dr. João Pedro Ribeiro atua na esfera trabalhista, atuando tanto para o empregado quanto para o empregador. Ele é pós-graduado em Direito do Trabalho e especializado em Compliance. Destaca-se pela habilidade em ajudar as empresas a cumprir regulamentos e padrões éticos, minimizando riscos legais... `}
             />
+            <Footer />
         </div>
     );
 };

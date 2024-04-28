@@ -23,7 +23,7 @@ const Publicacao = ({ imagem_publicacao, text, imagem_publicador, nome_publicado
                 <div dangerouslySetInnerHTML={{ __html: text }}></div>
             </div>
             <div className='rounded mx-auto md:w-8/12 mt-10 flex border-2 border-[#1A191C] p-4 gap-3'>
-                <img src={imagem_publicador} alt='publicador' />
+                <img className="w-5/12 md:w-12/12" src={imagem_publicador} alt='publicador' />
                 <div className='flex flex-col'>
                     <h2 className='font-[Lato] text-xl text-white mb-2 text-center'>
                         {nome_publicador}
