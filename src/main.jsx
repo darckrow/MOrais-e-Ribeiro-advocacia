@@ -16,7 +16,7 @@ import Publicacoes from './routes/Publicacoes/Publicacoes';
 
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element:<Home />
   },
   {
