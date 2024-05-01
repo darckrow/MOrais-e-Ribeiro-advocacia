@@ -8,6 +8,7 @@ import Imagem3 from '../Home/todos2.jpg';
 import Imagem4 from '../Home/foto1.jpg';
 import Imagem5 from '../Home/foto2.jpg';
 import Imagem6 from '../Home/foto3.jpg';
+import Footer from '../../Components/Footer';
 
 
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
   const content = <>
     <div className="visible md:invisible bg:hidden block absolute top-36 w-full left-0 right-0 bg-[#000000]">
       <ul className='text-center text-xl p-26 '>
-        <Link spy={true} smooth={true} to="Home"> <li className='hover:text-yellow-500 my-4 py-4 hover:rouded'>Home</li> </Link>
+        <Link spy={true} smooth={true} to=""> <li className='hover:text-yellow-500 my-4 py-4 hover:rouded'>Home</li></Link>
         <Link spy={true} smooth={true} to="Profissionais"> <li className='hover:text-yellow-500 my-4 py-4 hover:rouded'>Profissionais</li> </Link>
         <Link spy={true} smooth={true} to="Publicações"> <li className='hover:text-yellow-500 my-4 py-4 hover:rouded'>Publicações</li> </Link>
         <Link spy={true} smooth={true} to="Atuação"> <li className='hover:text-yellow-500 my-4 py-4 hover:rouded'>Atuação</li> </Link>
@@ -74,7 +75,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </nav>
+  
   )
 }
 export default Home
