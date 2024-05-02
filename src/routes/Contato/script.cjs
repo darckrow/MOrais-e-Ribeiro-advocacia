@@ -1,34 +1,44 @@
-const express = require('express');
-const fs = require('fs');
-const cors = require('cors'); // Importe o pacote 'cors'
+const express = require("express");
+const fs = require("fs");
+const cors = require("cors");
 
 const app = express();
 const port = 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors()); // Use o middleware 'cors' para permitir solicitações de origens diferentes
+app.use(cors());
 
-// Rota para lidar com o envio do formulário
-app.post('/submit-form', (req, res) => {
-  // Obter os dados do formulário do corpo da solicitação
+const readDataFromFile = (filename) => {
+  try {
+    const data = fs.readFileSync(filename, "utf8");
+    return JSON.parse(data);
+  } catch (err) {
+    console.error("Erro ao ler o arquivo JSON:", err);
+    return [];
+  }
+};
+
+const writeDataToFile = (filename, data) => {
+  try {
+    fs.writeFileSync(filename, JSON.stringify(data, null, 2));
+  } catch (err) {
+    console.error("Erro ao escrever no arquivo JSON:", err);
+  }
+};
+
+app.post("/submit-form", (req, res) => {
   const formData = req.body;
 
-  // Carregar os dados existentes do arquivo JSON, se houver
-  let existingData = [];
-  try {
-    existingData = JSON.parse(fs.readFileSync('formData.json', 'utf8'));
-  } catch (err) {
-    console.error('Erro ao ler o arquivo JSON:', err);
+  if (!formData.name || !formData.email) {
+    return res.status(400).send("Nome e email são campos obrigatórios.");
   }
 
-  // Adicionar os novos dados ao array existente
+  const existingData = readDataFromFile("formData.json");
   existingData.push(formData);
+  writeDataToFile("formData.json", existingData);
 
-  // Escrever os dados atualizados de volta para o arquivo JSON
-  fs.writeFileSync('formData.json', JSON.stringify(existingData, null, 2));
-
-  res.send('Formulário enviado com sucesso!');
+  res.send("Formulário enviado com sucesso!");
 });
 
 app.listen(port, () => {
