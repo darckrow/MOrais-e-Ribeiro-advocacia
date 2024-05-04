@@ -13,8 +13,8 @@ import Footer from '../../Components/Footer';
 const Home = () => {
 
   return (
-    <nav>
- { /*CHAMANDO COMPONENTE Navibar*/}
+    <nav >
+      { /*CHAMANDO COMPONENTE MENU*/}
       <Navibar />
 
  { /* AQUI FOI COLOCADO A IMAGEM DE FUNDO DA HOME*/}
@@ -120,7 +120,7 @@ const Home = () => {
             <Footer />
           </div>
         </div>
-      </div>
+      </section>
     </nav>
   )
 }
