@@ -8,7 +8,7 @@ import joao from "../../assets/joao_public.svg";
 
 const Publicacoes = () => {
     return (
-        <div className='bg-[#2C2843] w-full'>
+        <div className='bg-[#1A191C] w-full'>
             <Navigation />
             <h1 className='w-full pt-40 text-center font-[Barlow] text-white text-3xl my-4'>
                 Publicações

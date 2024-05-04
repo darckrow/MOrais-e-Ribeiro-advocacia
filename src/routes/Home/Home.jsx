@@ -25,7 +25,7 @@ const Home = () => {
   </>
 
   return (
-    <nav >
+    <nav>
       { /*CHAMANDO COMPONENTE MENU*/}
       <Menu />
 
@@ -50,8 +50,9 @@ const Home = () => {
               </h4>
             </div>
           </div>
-        </div>
-      </section>
+          </section>
+      </div>
+
     </nav>
   
   )
