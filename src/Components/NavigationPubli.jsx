@@ -23,7 +23,7 @@ const NavigationPubli = () => {
     return (
         <nav className='fixed xl:flex xl:items-center xl:justify-between top-0 left-0 w-full bg-[#000000] text-white xl:py-5 px-10 py-4'>
             <div className='flex items-center flex-1 justify-between'>
-                <Link to={"../home"}>
+                <Link to={"/"}>
                     <img className='h-[6rem]' src={logo} alt='logo' />
                 </Link>
                 <div onClick={handleClick} className="text-3xl cursor-pointer xl:hidden block mx-2">
@@ -37,7 +37,7 @@ const NavigationPubli = () => {
                     xl:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500
             '
                 >
-                    <Link className='duration-500 mx-4' to={"../home"}>
+                    <Link className='duration-500 mx-4' to={"/"}>
                         <li className='font-[Popins]'>Home</li>
                     </Link>
                     <Link className='duration-500 mx-4' to={"../atuacao"}>
