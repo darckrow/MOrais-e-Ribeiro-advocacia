@@ -211,9 +211,6 @@ const Contato = () => {
   );
 };
 
-<<<<<<< HEAD
+
 export default Contato;
 
-=======
-export default Contato;
->>>>>>> ff24abab1717eefcf1f27ce5b95dc533d30cad15

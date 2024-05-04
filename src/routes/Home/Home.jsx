@@ -120,7 +120,7 @@ const Home = () => {
             <Footer />
           </div>
         </div>
-      </section>
+      </div>
     </nav>
   )
 }
