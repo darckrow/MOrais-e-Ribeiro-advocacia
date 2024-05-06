@@ -76,19 +76,19 @@ const Home = () => {
           { /*AQUI FOI CRIADO 3 CARDS COM FOTO E NOME DOS ADVOGADOS*/}
           <section class="container mx-auto px-8 py-8 lg:py-0">
             <div class="mt-10 grid grid-cols-1 gap-10 lg:grid-cols-3">
-              <div class="flex-col bg-clip-border bg-transparent text-gray-700 shadow-md relative grid min-h-[30rem] items-end overflow-hidden rounded-2xl"><img src={Imagem4} alt="bg" class="h-[50rem] absolute inset-0 h-full w-full object-cover object-center" />
+              <div class="flex-col bg-clip-border bg-transparent text-gray-700 shadow-md relative grid min-h-[30rem] items-end overflow-hidden rounded-2xl"><img src={Imagem4} alt="bg" class="h-[50rem] absolute inset-0 w-full object-cover object-center" />
                 <div class="absolute inset-0 bg-black/50"></div>
                 <div class="p-6 relative flex flex-col justify-end">
                   <a href="https://www.linkedin.com/in/nikollymorais/" class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-white">Dra. Nikolly Karoline Morais e Silva</a>
                 </div>
               </div>
-              <div class="flex-col bg-clip-border bg-transparent text-gray-700 shadow-md relative grid min-h-[30rem] items-end overflow-hidden rounded-2xl"><img src={Imagem5} alt="bg" class="h-[50rem] absolute inset-0 h-full w-full object-cover object-center" />
+              <div class="flex-col bg-clip-border bg-transparent text-gray-700 shadow-md relative grid min-h-[30rem] items-end overflow-hidden rounded-2xl"><img src={Imagem5} alt="bg" class="h-[50rem] absolute inset-0 w-full object-cover object-center" />
                 <div class="absolute inset-0 bg-black/50"></div>
                 <div class="p-6 relative flex flex-col justify-end">
                   <a href="https://www.linkedin.com/in/joaopedrorrmoliveira/" class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-white">Dr. João Pedro Ribeiro</a>
                 </div>
               </div>
-              <div class="flex-col bg-clip-border bg-transparent text-gray-700 shadow-md relative grid min-h-[30rem] items-end overflow-hidden rounded-2xl"><img src={Imagem6} alt="bg" class="h-[40rem] absolute inset-0 h-full w-full object-cover object-center" />
+              <div class="flex-col bg-clip-border bg-transparent text-gray-700 shadow-md relative grid min-h-[30rem] items-end overflow-hidden rounded-2xl"><img src={Imagem6} alt="bg" class="h-[40rem] absolute inset-0 w-full object-cover object-center" />
                 <div class="absolute inset-0 bg-black/50"></div>
                 <div class="p-6 relative flex flex-col justify-end">
                   <a href="https://www.linkedin.com/in/gustavo-santos-ribeiro-31b652196/" class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-white">Dr. Gustavo Santos Ribeiro</a>
